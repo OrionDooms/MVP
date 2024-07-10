@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftClean - Profile</title>
+    <link rel="stylesheet" href="CSS/Profile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SwiftClean</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Booking.html">Bookings</a></li>
+                    <!--li><a href="profile.html">Profile</a></li-->
+                    <li><a href="Index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <div class="profile-details">
+                <h3>Profile Information</h3>
+                <p><strong>Username:</strong> <span id="profileUsername">john_doe</span></p>
+                <p><strong>Email:</strong> <span id="profileEmail">john.doe@example.com</span></p>
+                <button class="btn" id="editProfileBtn">Edit Profile</button>
+            </div>
+
+            <div class="edit-profile" id="editProfileForm" style="display: none;">
+                <h3>Edit Profile</h3>
+                <form id="profileForm">
+                    <input type="text" id="editUsername" placeholder="Username" required />
+                    <input type="email" id="editEmail" placeholder="Email" required />
+                    <button type="submit" class="btn">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="bookings">
+                <h3>Past Bookings</h3>
+                <ul id="bookingList">
+                    <!-- Past bookings will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SwiftClean. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JavaScript/Profile.js"></script>
+</body>
+</html>

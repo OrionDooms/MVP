@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftClean - Bookings</title>
+    <link rel="stylesheet" href="CSS/Booking.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SwiftClean</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!--li><a href="bookings.html">Bookings</a></li-->
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="Homepage-login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="booking">
+        <div class="container">
+            <h2>Book a Service</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="serviceSelect">Select Service:</label>
+                    <select id="serviceSelect" required>
+                        <option value="Quick Wash">Quick Wash</option>
+                        <option value="Full Wash">Full Wash</option>
+                        <option value="Detailing">Detailing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dateSelect">Select Date:</label>
+                    <input type="date" id="dateSelect" required />
+                </div>
+                <div class="form-group">
+                    <label for="timeSelect">Select Time:</label>
+                    <input type="time" id="timeSelect" required />
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+            <div id="bookingConfirmation" style="display: none;">
+                <h3>Booking Confirmed</h3>
+                <p id="confirmationMessage"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SwiftClean. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JavaScript/Booking.js"></script>
+</body>
+</html>
