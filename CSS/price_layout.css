@@ -22,6 +22,10 @@
 .services_container {
   background-color:black;
 }
+.services_container h2{
+  color: white;
+  text-align: center;
+}
 .card-group {
   max-width: 1260px;
   display: flex;
