@@ -34,7 +34,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
+/*header image*/
 .hero {
   background: #ff416c;
   text-align: center;
@@ -65,49 +65,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
 }
-
-.services {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.services h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.service-item {
-  margin: 20px 0;
-}
-
-.service-item h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
+/*About section*/
 .testimonials {
   background: #f6f5f7;
   text-align: center;
   padding: 50px 0;
-}
-
-.testimonials h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.testimonial-item {
-  margin: 20px 0;
-}
-
-.testimonial-item p {
-  font-size: 18px;
-  font-style: italic;
-}
-
-.testimonial-item h3 {
-  font-size: 20px;
-  margin-top: 10px;
 }
 
 footer {
