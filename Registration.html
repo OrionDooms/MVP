@@ -15,16 +15,16 @@
             
             <a href="index.html">
                 <h2>SwiftClean</h2></a>
-            <form action="#">
+            <form action="PHP/connect.php" method="post">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
                 <!--Username-->
-                <input type="text" placeholder="Name"/>
+                <input type="text" id="username" name="username" placeholder="Name"/>
                 <!--Email-->
-                <input type="email" placeholder="Email"/>
+                <input type="email" id="email" name="email" placeholder="Email"/>
                
                 <!---Radio Buttons--->
-                <h3>Select your vehicle</h3>
+                <!--h3>Select your vehicle</h3>
                 <div class="switch-field">
                     <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
                     <label for="radio-three">compact</label>
@@ -34,22 +34,22 @@
                     
                     <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
                     <label for="radio-three">SUV</label>
-                </div>
+                </div-->
                 <!--password-->
-                <input type="password" placeholder="Password"/>
+                <input type="password" id="password" name="password" placeholder="Password"/>
                 <!--Submit button-->
-                <button>Sign Up</button>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <!--------Sign In-------->
             <a href="index.html"><h2>SwiftClean</h2></a>            
-            <form action="#">
+            <form action="PHP/Login.php" method="post">
                 <h1>Sign In</h1>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Password"/>
-                <button>Sign In</button>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="password" name="password" placeholder="Password"/>
+                <button type="submit">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
