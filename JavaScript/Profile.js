@@ -10,7 +10,7 @@ document.getElementById('profileForm').addEventListener('submit', (e) => {
   document.getElementById('profileEmail').innerText = email;
   document.getElementById('editProfileForm').style.display = 'none';
   console.log(`Profile Updated - Username: ${username}, Email: ${email}`);
-  // TODO: Integrate with backend API to save changes
+   TODO: Integrate with backend API to save changes
 });
 
 // Example past bookings data (in a real scenario, this would be fetched from the backend)

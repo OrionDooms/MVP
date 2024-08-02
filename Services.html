@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftClean - Services</title>
-    <link rel="stylesheet" href="CSS/Services.css">
-</head>
+    <!--link rel="stylesheet" href="CSS/Services.css"-->
+    <link rel="stylesheet" href="CSS/Homepage.css">
+    <link rel="stylesheet" href="CSS/Booking.css" </head>
+
 <body>
     <header>
         <div class="container">
@@ -24,41 +27,108 @@
         </div>
     </header>
 
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Quick Wash</h3>
-                <p>A fast and thorough wash for your car.</p>
-                <p>Price: $15</p>
-                <a class="btn" href="Booking.html">Book Now</a>
-            </div>
-            <div class="service-item">
-                <h3>Full Wash</h3>
-                <p>Complete cleaning inside and out.</p>
-                <p>Price: $25</p>
-                <a class="btn" href="Booking.html">Book Now</a>
-            </div>
-            <div class="service-item">
-                <h3>Detailing</h3>
-                <p>Premium detailing services for your vehicle.</p>
-                <p>Price: $50</p>
-                <a class="btn" href="Booking.html">Book Now</a>
-            </div>
-        </div>
-    </section>
+    <div class="=code">
+        <div class="wrapper example3">
+            <div class="item1">
+                <form action="PHP/process_booking.php" method="post">
+                <!--Radio Buttons--->
+                <h3>Select your vehicle type</h3>
+                <!--div class="switch-field"-->
+                <input type="radio" id="carSmall" name="carType" value="small" onchange="updateServiceList()" />
+                <label for="radio-three">Sedan</label>
 
-    <footer>
-        <div class="container">
+                <input type="radio" id="carMedium" name="carType" value="medium" onchange="updateServiceList()" />
+                <label for="radio-four">SUV/Double cab</label>
+
+                <input type="radio" id="carLarge" name="carType" value="large" onchange="updateServiceList()" />
+                <label for="radio-three">Van/Minibus</label>
+
+                <!--/div-->
+
+                <div class="item2">
+                    <section>
+                        <!--div class="checkbox-section"-->
+                        <!--special-services-buttons-->
+                        <h3>Special Services</h3>
+                        <button onclick="BasicWash()" class="btn">BASIC WASH</button>
+                        <button onclick="STANDART()" class="btn">STANDART</button>
+                        <button onclick="STANDARTPLUS()" class="btn">STANDART PLUS</button>
+                        <button onclick="PREMIUM()" class="btn">PREMIUM</button>
+                        <!--/div-->
+                    </section>
+                    <section>
+                        <!--div class="checkbox-section"-->
+                        <!--checkbox-->
+                        <h3>Our services</h3>
+                        <label class="checkbox-label">Wash & Dry
+                            <input type="checkbox" id="WashDry" name="services" value="Wash & Dry" data-small="70"
+                                data-medium="80" data-large="100" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Wash, Dry & Tyre Shine
+                            <input type="checkbox" id="WashDryTyre" name="services" value="WashDryTyre" data-small="90"
+                                data-medium="110" data-large="130" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Wash & Wax
+                            <input type="checkbox" id="WashWax" name="services" value="Wash & Wax" data-small="150"
+                                data-medium="170" data-large="190" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Base interior Vacuum/Wash
+                            <input type="checkbox" id="Vacuum/Wash" name="services" value="Base interior Vacuum/Wash"
+                                data-small="190" data-medium="190" data-large="190" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Polymer Wax With Clay
+                            <input type="checkbox" id="WaxWithClay" name="services" value="Polymer Wax With Clay"
+                                data-small="300" data-medium="350" data-large="400" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Deluxe Wash/Wheel/Tires
+                            <input type="checkbox" id="Wash/Wheel" name="services" value="Deluxe Wash/Wheel/Tires"
+                                data-small="110" data-medium="130" data-large="150" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox-label">Dent Removal
+                            <input type="checkbox" id="DentRemoval" name="services" value="Dent Removal" data-small="20"
+                                data-medium="25" data-large="30" onchange="updateServiceList()">
+                            <span class="checkmark"></span>
+                        </label>
+                        <!--clear-list-button-->
+                        <button onclick="Clear()" class="btn">Clear list</button>
+                        <!--/div-->
+                        <div class="item3">
+                            <h2>Selected Services</h2>
+                            <div id="displayBox"></div>
+                            <button type="submit">Book Now</button>
+                        </div>
+
+                </div>
+                </form>
+                </section>
+            </div> 
+        </div>
+    </div>
+        <footer>
+            <!--div class="container"-->
             <p>&copy; 2024 SwiftClean. All rights reserved.</p>
             <ul>
                 <li><a href="privacy.html">Privacy Policy</a></li>
                 <li><a href="terms.html">Terms of Service</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </div>
-    </footer>
+            <!--/div-->
+        </footer>
 
-    <script src="JavaScript/Services.js"></script>
+        <!--script src="JavaScript/Services.js"></script-->
+        <script src="JavaScript/Booking.js"></script>
+        <script src="JavaScript/Services.js"></script>
 </body>
 </html>

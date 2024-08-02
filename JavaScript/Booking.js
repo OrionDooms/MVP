@@ -1,24 +1,5 @@
-//document.getElementById('bookingForm').addEventListener//('submit', (e) => {
-  //e.preventDefault();
-
-  //const service = document.getElementById('serviceSelect').value;
-  //const date = document.getElementById('dateSelect').value;
-  //const time = document.getElementById('timeSelect').value;
-
-  // Simulate booking confirmation
-  //const confirmationMessage = `Your booking for a ${service} on ${date} at ${time} has been confirmed.`;
-  //document.getElementById('confirmationMessage').innerText = confirmationMessage;
-
-  //document.getElementById('bookingForm').style.display = 'none';
-  //document.getElementById('bookingConfirmation').style.display = 'block';
-
-  //console.log(`Booking - Service: ${service}, Date: ${date}, Time: ${time}`);
-  // TODO: Integrate with backend API to save booking details
-//});
-//Booking a special service
-//Select Basic Wash option
 function BasicWash() {
-    var specialGroup= ['CustomHandWash', 'MiniDetails',"ExpressWax", "Vacuum/Wash"];
+    var specialGroup= ['WashDryTyre', 'WashWax',"ExpressWax", "Vacuum/Wash"];
 
 specialGroup.forEach(function(itemId){
     document.getElementById(itemId).checked = true;
@@ -26,7 +7,7 @@ specialGroup.forEach(function(itemId){
 }
 //Select STANDART option
 function STANDART() {
-  var specialGroup= ['CustomHandWash', "WaxWithClay", "Vacuum/Wash"];
+  var specialGroup= ['WashDryTyre', "Vacuum/Wash", "WashWax"];
 
 specialGroup.forEach(function(itemId){
   document.getElementById(itemId).checked = true;
@@ -34,7 +15,7 @@ specialGroup.forEach(function(itemId){
 }
 //Select STANDARTPLUS option
 function STANDARTPLUS() {
-  var specialGroup= ["Wash/Wheel", "DentRemoval", "ExpressWax", "CustomHandWash"];
+  var specialGroup= ["WashDry", "WashWax", "Vacuum/Wash", "Wash/Wheel"];
 
 specialGroup.forEach(function(itemId){
   document.getElementById(itemId).checked = true;
@@ -42,7 +23,7 @@ specialGroup.forEach(function(itemId){
 }
 //Select PREMIUM option
 function PREMIUM() {
-  var specialGroup= ["Wash/Wheel", "DentRemoval", "CustomHandWash", "Vacuum/Wash"];
+  var specialGroup= ["WashDryTyre", "Vacuum/Wash", "WaxWithClay", "Wash/Wheel", "DentRemoval"];
 
 specialGroup.forEach(function(itemId){
   document.getElementById(itemId).checked = true;
@@ -51,7 +32,7 @@ specialGroup.forEach(function(itemId){
 
 //Clear all option
 function Clear() {
-  var specialGroup= ["WaxWithClay", 'MiniDetails', "ExpressWax", "Wash/Wheel", "DentRemoval", "CustomHandWash", "Vacuum/Wash"];
+  var specialGroup= ["WashDry", 'WashDryTyre', "WashWax", "Vacuum/Wash", "WaxWithClay", "Wash/Wheel", "DentRemoval"];
 
 specialGroup.forEach(function(itemId){
   document.getElementById(itemId).checked = false;

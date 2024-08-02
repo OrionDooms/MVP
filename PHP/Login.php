@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $email;
 
-                echo "Login successful! Welcome, " . $username;
+                Header("Location: ../homepage.php");
             } else {
                 echo "Invalid password.";
             }
